@@ -13,6 +13,7 @@ const SignupScreen = () => {
     <View style={styles.container}>
       <NavigationEvents onWillFocus={clearErrorMessage} />
       <AuthForm
+        style={styles.form}
         headerText="Sign Up for Tracker"
         errorMessage={state.errorMessage}
         submitButtonText="Sign Up"

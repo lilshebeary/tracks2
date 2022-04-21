@@ -1,3 +1,5 @@
+import '../_mockLocation';
+import React, { useContext, useCallback } from 'react';
 import createDataContext from './createDataContext';
 
 const locationReducer = (state, action) => {
@@ -30,7 +32,7 @@ const stopRecording = dispatch => () => {
 const addLocation = dispatch => (location, recording) => {
     dispatch({ type: 'add_current_location', payload: location });
     if (recording) {
-        dispatch({ typr: 'add_location', payload: location })
+        dispatch({ type: 'add_location', payload: location })
     }
 };
 

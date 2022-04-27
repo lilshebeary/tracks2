@@ -38,7 +38,7 @@ const TrackCreateScreen = ({ isFocused }) => {
 TrackCreateScreen.navigationOptions = () => {
   return {
     title: 'Add Track',
-    tabBarIcon: <AntDesign name="plus" size={24} color="black" />
+    tabBarIcon: <AntDesign name="plus" size={20} color="black" />
   };
 };
 
